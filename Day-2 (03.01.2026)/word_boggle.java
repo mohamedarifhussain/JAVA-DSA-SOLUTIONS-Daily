@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class word_boggle {
 
     public static boolean search(char[][] grid, String word, int l, int i, int j, int[][] vis, int[][] path) {
