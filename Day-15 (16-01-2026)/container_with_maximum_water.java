@@ -1,5 +1,7 @@
-class Solution {
-    public int maxArea(int[] height) {
+import java.util.Arrays;
+
+class container_with_maximum_water {
+    public static int maxArea(int[] height) {
 
         int left = 0;
         int right = height.length - 1;
@@ -20,9 +22,18 @@ class Solution {
         return maxWater;
 
     }
+
+
+    public static void main(String[] args) {
+        int[] heights = {1,8,6,2,5,4,8,3,7};
+        int output  = maxArea(heights);
+
+        System.out.println("Input: heights="+Arrays.toString(heights));
+        System.out.println("Output: "+output);
+    }
 }
 
-
+/* 
 11. Container With Most Water
 Solved
 Medium
@@ -56,4 +67,4 @@ Constraints:
 
 n == height.length
 2 <= n <= 105
-0 <= height[i] <= 104
+0 <= height[i] <= 104 */
