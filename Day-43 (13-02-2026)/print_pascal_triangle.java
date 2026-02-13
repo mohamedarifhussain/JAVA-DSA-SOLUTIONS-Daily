@@ -22,7 +22,51 @@ public class print_pascal_triangle {
     public static void main(String[] args) {
 
         
-        printPascalTriangle(5);
+        int[] testCases = {
+
+                // -------- Basic ----------
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+
+                // -------- End of 2-digit ----------
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+
+                // -------- Start of 4-digit ----------
+                15,
+                16,
+                17,
+                18,
+
+                // -------- Random ----------
+                20,
+
+                
+        };
+
+        int tc = 1;
+        for (int n : testCases) {
+            System.out.println("Test Case " + tc++);
+            System.out.println("Input  : n = " + n);
+
+            // 👉 CALL YOUR METHOD HERE
+            
+
+            System.out.println("Output : ");
+            printPascalTriangle(n);
+            System.out.println("---------------------------");
+            System.out.println();
+        }
     }
 }
 
